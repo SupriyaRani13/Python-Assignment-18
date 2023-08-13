@@ -1,0 +1,224 @@
+Python Assignment - 18
+
+1. Create a zoo.py file first. Define the hours() function, which prints the string 'Open 9-5 '.
+   Then, use the interactive interpreter to import the zoo module and call its hours() function.
+
+Sol: We can create the zoo.py file and define the hours() function, and then use the interactive interpreter to import the module and 
+     call its hours() function:-
+
+    Step 1: Create the zoo.py file with the hours() function definition.
+
+    Create a file named zoo.py and add the following code to define the hours() function:
+
+    Eg - # zoo.py
+
+        def hours():
+          print('Open 9-5 daily')
+
+   Step 2: Use the interactive interpreter to import and use the zoo module.
+
+   Open your terminal or command prompt and launch the Python interpreter:
+
+   Eg - python
+
+  Step-3: Once you're in the Python interpreter, you can import the zoo module and call its hours() function as follows:
+
+  Eg - import zoo
+
+      zoo.hours()
+
+ Output: Open 9-5 daily
+
+
+2. In the interactive interpreter, import the zoo module as menagerie and call its hours() function.
+
+Sol: We can import the zoo module as menagerie and call its hours() function in the interactive interpreter:-
+
+    Step 1: Open the Python interactive interpreter:-
+
+    Eg - python
+
+    Step 2: Import the zoo module as menagerie and call its hours() function
+    
+    Eg- import zoo as menagerie
+
+         menagerie.hours()
+
+    Output: Open 9-5 daily
+
+    By using the as keyword during the import, you're assigning the module name zoo to the alias menagerie, allowing we
+    to refer to the module using the new name.
+
+  
+3. By using the as keyword during the import, you're assigning the module name zoo to the alias menagerie, allowing you to refer to the module
+   using the new name.
+
+Sol: When we use the as keyword during import, you can create an alias for the imported module, which allows we to refer to the module using 
+     the new alias name. This can be particularly useful for modules with long names or for avoiding naming conflicts.
+
+   Eg - import zoo as menagerie
+
+        menagerie.hours()
+
+  The zoo module is imported and assigned the alias menagerie. This means that instead of typing zoo.hours(), we can use the shorter alias 
+  menagerie.hours() to access the hours() function from the imported module. This doesn't change the behavior of the module or its functions;
+  it simply provides a convenient way to reference them.
+
+
+4. Import the hours() function as info and call it.
+
+Sol:  We can import the hours() function from the zoo module as info and call it in the interactive interpreter:-
+
+    Step 1: Open the Python interactive interpreter:
+
+    Eg - python
+
+   Step 2: Import the hours() function from the zoo module as info and call it:
+
+   Eg - from zoo import hours as info
+
+        info()
+
+   Output: Open 9-5 daily
+
+
+5. Create a plain dictionary with the key-value pairs "a": 1, "b": 2, and "c": 3, and print it out.
+
+Sol: We can create a plain dictionary with the key-value pairs 'a': 1, 'b': 2, and 'c': 3, and then print it out:
+
+    Eg - my_dict = {'a': 1, 'b': 2, 'c': 3}
+         print(my_dict)
+
+  Output: {'a': 1, 'b': 2, 'c': 3}
+
+
+6. Make an OrderedDict called fancy from the same pairs listed in 5 and print it. Did it print in the
+   same order as plain?
+
+Sol: We can create an OrderedDict called fancy from the same key-value pairs and print it. We'll also check if the order is maintained:
+
+Eg -from collections import OrderedDict
+
+# Create an OrderedDict with the same key-value pairs
+fancy = OrderedDict([('a', 1), ('b', 2), ('c', 3)])
+
+# Print the OrderedDict
+print(fancy)
+
+# Check if the order is maintained
+print(list(fancy.keys()) == ['a', 'b', 'c'])
+
+
+  Output: OrderedDict([('a', 1), ('b', 2), ('c', 3)])
+          True
+
+7. Make a default dictionary called dict_of_lists and pass it the argument list. Make the list
+dict_of_lists["a"] and append the value &#39;something for a' to it in one assignment. Print
+dict_of_lists["a"].
+
+Sol: We can create a defaultdict called dict_of_lists, append a value to the list associated with the key 'a', and then print the resulting list:
+
+  Eg - from collections import defaultdict
+
+# Create a defaultdict of lists
+dict_of_lists = defaultdict(list)
+
+# Append a value to the list associated with the key 'a'
+dict_of_lists['a'].append('something for a')
+
+# Print the list associated with the key 'a'
+print(dict_of_lists['a'])
+
+
+Output: ['something for a']
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
